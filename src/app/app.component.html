@@ -1,0 +1,27 @@
+
+
+ <button (click)="uselang('bs')" style="float: right;">BM</button>
+ 
+ <button (click)="uselang('en')"style="float: right;">ENG</button>
+ <br >
+ <br>
+    <form class="form-group">
+    <label>{{'LoginFormLabels.username' | translate | uppercase}}</label>
+    <input type="text" class="form-control" [(ngModel)]="username" pattern="[A-Z]*"name="username" placeholder="example" style="text-transform: uppercase;">
+    <br >
+    <br>
+    
+    <label>{{'LoginFormLabels.ic' | translate | uppercase}}:</label>
+    <input type="number"  class="form-control"[(ngModel)]="ic" name="ic" placeholder="000000-00-000">
+    <br >
+    <br>
+    <label>{{'LoginFormLabels.mobileno' | translate | uppercase}}:</label>
+    <input type="number"  class="form-control"[(ngModel)]="mobileno" name="mobileno" placeholder="012-3456789" >
+    <br >
+    <br>
+    <label>{{'LoginFormLabels.email' | translate | uppercase}}:</label>
+    <input type="email"  pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="form-control"[(ngModel)]="email" name="email" style="text-transform: uppercase;" placeholder="example@email.co">
+    
+    </form>
+
+
